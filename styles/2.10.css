@@ -1,0 +1,111 @@
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0b132b;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* para colocar el header arriba */
+    align-items: center;
+}
+
+/* Encabezado */
+header.conagua {
+    background-color: #1c2541;
+    color: #00b4d8;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Caja de pagos */
+.pagos {
+    background-color: #1c2541;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 119, 182, 0.5);
+    margin-top: 2rem; /* separa el formulario del título */
+}
+
+/* Logo de Conagua */
+.pagos::before {
+    content: "";
+    display: block;
+    background-image: url("../styles/conagua_logo.png"); /* coloca tu logo aquí */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/* Título */
+.pagos h2 {
+    text-align: center;
+    color: #00b4d8;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #90e0ef;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00b4d8;
+    border-radius: 8px;
+    background-color: #3a506b;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #90e0ef;
+    box-shadow: 0 0 8px rgba(144, 224, 239, 0.5);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#pago {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #90e0ef;
+}
+

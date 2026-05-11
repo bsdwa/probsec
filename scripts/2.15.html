@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Potencia eléctrica</title>
+    <link rel="stylesheet" href="../styles/2.15.css">
+</head>
+<body>
+    <header class="potencia">
+        <h1>Potencia eléctrica</h1>
+    </header>
+    <div class="calculo">
+        <h2>Ingrese los datos</h2>
+        <form>
+            <label for="resistencia">Resistencia (R en ohms)</label>
+            <input type="number" id="resistencia" placeholder="Ej. 10" required>
+
+            <label for="corriente">Corriente (I en amperes)</label>
+            <input type="number" id="corriente" placeholder="Ej. 5" required>
+
+            <button type="button" onclick="Potencia()">Enviar</button>
+        </form>
+        <p id="voltaje"></p>
+        <p id="potencia"></p>
+    </div>
+
+    <script src="../scripts/problemas.js" defer></script>
+</body>
+</html>

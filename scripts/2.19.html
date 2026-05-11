@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Costo de llamada</title>
+    <link rel="stylesheet" href="../styles/2.19.css">
+</head>
+<body>
+    <header class="llamada">
+        <h1>Costo de llamada</h1>
+    </header>
+    <div class="calculo">
+        <h2>Ingrese los datos</h2>
+        <form>
+            <label for="minutos">Duración de la llamada (minutos)</label>
+            <input type="number" id="minutos" placeholder="Ej. 10" required>
+
+            <label for="costo">Costo por minuto</label>
+            <input type="number" id="costo" placeholder="Ej. 2.5" required>
+
+            <button type="button" onclick="Llamada()">Enviar</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="../scripts/problemas.js" defer></script>
+</body>
+</html>

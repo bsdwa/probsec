@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #4a148c, #6a1b9a); /* morado oscuro / vino */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabecera */
+header.nombre {
+    background-color: #311b92;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Sección principal */
+section.principal {
+    background-color: #ffffff;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(74,20,140,0.5);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+section.principal h2 {
+    color: #4a148c;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-index {
+    display: block;
+    background-color: #6a1b9a;
+    color: #fff;
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-index:hover {
+    background-color: #4a148c;
+    transform: scale(1.05);
+}

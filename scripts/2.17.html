@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio ponderado</title>
+    <link rel="stylesheet" href="../styles/2.17.css">
+</head>
+<body>
+    <header class="promedio">
+        <h1>Promedio</h1>
+    </header>
+    <div class="calculo">
+        <h2>Ingrese las calificaciones</h2>
+        <form>
+            <label for="ex1">Examen 1 (25%)</label>
+            <input type="number" id="ex1" placeholder="Ej. 80" required>
+
+            <label for="ex2">Examen 2 (25%)</label>
+            <input type="number" id="ex2" placeholder="Ej. 90" required>
+
+            <label for="ex3">Examen 3 (50%)</label>
+            <input type="number" id="ex3" placeholder="Ej. 70" required>
+
+            <button type="button" onclick="Promedio()">Enviar</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="../scripts/problemas.js" defer></script>
+</body>
+</html>
